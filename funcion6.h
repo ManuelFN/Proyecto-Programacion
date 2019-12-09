@@ -1,4 +1,7 @@
+#include "funcion1.h"
+#include "funcion2.h"
 
+void comprobarnum(FILE *fich, FILE *fich2, int totcli, int totmen);
 
 void comprobarnum(FILE *fich, FILE *fich2, int totcli, int totmen){
 	

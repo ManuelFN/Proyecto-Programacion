@@ -1,3 +1,4 @@
+#pragma once
 
  struct grupo
 {
@@ -7,25 +8,9 @@
 	char ope[20];
 } clientes;
 
-struct mn
-{
-	int dest;
-	char text[161];
-	char fechayhoramn[100];
-	int num2;
-	int codmen;
-	int emple;
-	char elim[6];
-	
-} mensa;
+void alta(FILE *ffich,int ftotcli);
 
-struct conv
- {
- int peso;
- char equival; 
- } asc[192];
-
-	void alta(FILE *ffich,int ftotcli)
+void alta(FILE *ffich,int ftotcli)
 		{
 		printf("\n\n       Introduce el Cliente: "); 
 			gets(clientes.clien);

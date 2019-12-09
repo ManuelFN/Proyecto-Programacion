@@ -3,19 +3,14 @@
 #include<stdlib.h>
 #include<locale.h>
 #include<time.h>
+
 #include "funcion1.h"
 #include "funcion2.h"
 #include "funcion4.h"
 #include "funcion5.h"
 #include "funcion6.h"
 
-void mensaje(FILE *ffich2,int ftotmen, char ffechayhora[100]);
-void alta(FILE *ffich,int ftotcli);
-void clavef(char clave[20]);
-void comprobarnum(FILE *fich, FILE *fich2, int totcli, int totmen);
-void codificar(FILE *fich2, FILE *fich, char clave[20], int totcli, int totmen);
-
-int main()
+int main(void)
 {
 	time_t t;
 	struct tm *tm;

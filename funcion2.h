@@ -1,13 +1,7 @@
- 
- struct grupo2
-{
-	char clien [30];
-	char geren[30];
-	int num;
-	char ope[20];
-} clientes2;
+#pragma once
+#include "funcion1.h"
 
-struct mn2
+struct mn
 {
 	int dest;
 	char text[161];
@@ -17,17 +11,18 @@ struct mn2
 	int emple;
 	char elim[6];
 	
-} mensa2;
+} mensa;
 
-struct conv2
+struct conv
  {
  int peso;
  char equival; 
- } asc2[192];
+ } asc[192];
+
+void mensaje(FILE *ffich2,int ftotmen, char ffechayhora[100]);
 
 void mensaje(FILE *ffich2,int ftotmen, char ffechayhora[100])
 	{
-		char siono[1];
 		
 		printf("\n       Texto: "); 
 			gets(mensa.text);
